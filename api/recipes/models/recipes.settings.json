@@ -28,8 +28,36 @@
       "plugin": "upload",
       "required": false
     },
+    "procedure": {
+      "type": "text"
+    },
+    "kcal": {
+      "type": "decimal"
+    },
+    "protein": {
+      "type": "decimal"
+    },
+    "carbs": {
+      "type": "decimal"
+    },
+    "fat": {
+      "type": "decimal"
+    },
+    "cook_time": {
+      "type": "integer"
+    },
+    "categories": {
+      "collection": "categories"
+    },
+    "types": {
+      "collection": "types"
+    },
     "ingredients": {
-      "collection": "ingredients"
+      "type": "json"
+    },
+    "author": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
